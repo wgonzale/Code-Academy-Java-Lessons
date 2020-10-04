@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+public class Playlist {
+
+	  public static void main(String[] args) {
+		    ArrayList<String> desertIslandPlaylist;
+		    desertIslandPlaylist = new ArrayList<String>();
+		    desertIslandPlaylist.add("Figure it Out by Royal Blood");
+		    desertIslandPlaylist.add("Bubble Dream by CHON");
+		    desertIslandPlaylist.add("Shibuya by Covet");
+		    desertIslandPlaylist.add("Sure As Hell by Tonight Alive");
+		    desertIslandPlaylist.add("Here in Your Bedroom by Goldfinger");
+		    desertIslandPlaylist.add("Dear Maria, Count Me In by All Time Low");
+		    
+		    desertIslandPlaylist.remove(1);
+		    System.out.println(desertIslandPlaylist);
+		    System.out.println(desertIslandPlaylist.size());
+		   
+		    String songA = desertIslandPlaylist.get(0); // creating temp variable to swap the order of the first and last song 
+		    String songB = desertIslandPlaylist.get(4);
+		    desertIslandPlaylist.set(0,songB);
+		    System.out.println(desertIslandPlaylist);
+		    
+		    
+		  
+		  }
+
+
+}
