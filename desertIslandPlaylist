@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Playlist {
 
-	  public static void main(String[] args) {
+	 public static void main(String[] args) {
 		    ArrayList<String> desertIslandPlaylist;
 		    desertIslandPlaylist = new ArrayList<String>();
 		    desertIslandPlaylist.add("Figure it Out by Royal Blood");
@@ -19,6 +19,7 @@ public class Playlist {
 		    String songA = desertIslandPlaylist.get(0); // creating temp variable to swap the order of the first and last song 
 		    String songB = desertIslandPlaylist.get(4);
 		    desertIslandPlaylist.set(0,songB);
+		    desertIslandPlaylist.set(4, songA);
 		    System.out.println(desertIslandPlaylist);
 		    
 		    
